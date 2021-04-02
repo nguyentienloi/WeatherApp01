@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <EditText
+           android:id="@+id/edtTimKiem"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="5dp"
+           android:layout_width="280dp"
+           android:layout_height="wrap_content"
+           android:hint="City, State"
+           android:textColorHint="#f000"/>
+       <Button
+           android:id="@+id/btnTim"
+           android:layout_marginLeft="5dp"
+           android:layout_marginTop="5dp"
+           android:text="Tìm Kiếm"
+           android:textStyle="bold"
+           android:textColor="#f000"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNgayTiepTheo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Dự báo 7 ngày tiếp theo"
+        android:textColor="#ff0900"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtTenTP"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên thành phố:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#f000" />
+    <TextView
+        android:id="@+id/txtTenQG"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên quốc gia:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#f000"/>
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bầu trời"
+        android:textColor="#f000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginTop="2dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/txtNhietDo"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhiệt độ"
+        android:textSize="40dp"
+        android:textColor="#f000"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/txtTrangThai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons_wet" />
+            <TextView
+                android:id="@+id/txtDoAm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đô ẩm"
+                android:textSize="20sp"
+                android:textColor="#f52602"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons_may" />
+            <TextView
+                android:id="@+id/txtMay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mây"
+                android:textSize="20sp"
+                android:textColor="#f52602"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icons_gio" />
+            <TextView
+                android:id="@+id/txtGio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gió"
+                android:textSize="20sp"
+                android:textColor="#f52602"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+<TextView
+    android:id="@+id/txtThoiGianCapNhat"
+    android:layout_marginTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Thời gian cập nhật"
+    android:textSize="25sp"
+    android:textColor="#f000"
+    android:gravity="center"/>
+    <!---->
+</LinearLayout>
