@@ -54,7 +54,7 @@ public class CustomAdapter extends BaseAdapter{
         txtMax.setText(thoiTiet.max+"°C");
         txtMin.setText(thoiTiet.min+ "°C");
 
-        //Picasso.with(context).load("http://openweathermap.org/img/w/" + thoiTiet.image+".png").into(imgStatus);
+        Picasso.with(context).load("http://openweathermap.org/img/w/" + thoiTiet.image+".png").into(imgStatus);
 
         return convertView;
     }

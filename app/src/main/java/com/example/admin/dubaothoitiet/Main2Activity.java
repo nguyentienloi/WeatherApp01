@@ -36,22 +36,18 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        findViewById(R.id.buttonBarChart).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), BarChartActivity.class));
+            }
+        });
         anhXa();
         Intent intent = getIntent();
         String city = intent.getStringExtra("name");
         String lon = intent.getStringExtra("lon");
         String lat = intent.getStringExtra("lat");
         cityName = city;
-//        if (city.equals("")) {
-//            tenThanhPho = "Hanoi";
-//            getDulieu7Ngay(tenThanhPho);
-//        } else {
-//            city = city.trim();
-//            city = city.replaceAll("\\s","");
-//            tenThanhPho = "Hanoi";
-//            getDulieu7Ngay(tenThanhPho);
-//            Log.d("aaa", "Du lieu truyen ra: " + city);
-//        }
         getDulieu7Ngay(lon, lat);
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override

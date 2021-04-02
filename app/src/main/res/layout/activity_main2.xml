@@ -11,15 +11,25 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:src="@drawable/icons_back"/>
+
     <TextView
         android:id="@+id/txtTenThanhPho"
-        android:layout_width="wrap_content"
+        android:layout_width="199dp"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:text="Tên thành phố"
         android:layout_marginLeft="15dp"
-        android:textColor="#f000"/>
+        android:text="Tên thành phố"
+        android:textColor="#f000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonBarChart"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:gravity="center"
+        android:text="Xem biểu đồ " />
+
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
